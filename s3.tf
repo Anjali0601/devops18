@@ -22,3 +22,10 @@ versioning_configuration {
 status = "Enabled"
 }
 }
+terraform {
+backend "s3" {
+region = "us-west-2"
+bucket = "anjali77.devops.project.bucket"
+key = "prod/terraform.tfstate"
+}
+}
